@@ -65,7 +65,7 @@ function AdminLayout() {
             <>
               {/* Banner Image */}
               <img
-                src="/src/assets/images/Banner/Banner.jpeg" // Replace with the actual URL of your banner image
+                src="/src/assets/images/Banner/Banner2.jpeg" // Replace with the actual URL of your banner image
                 alt="Banner"
                 className="w-cover h-33 pb-4 object-cover " // Adjust height as needed
               />

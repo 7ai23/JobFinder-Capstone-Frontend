@@ -15,6 +15,7 @@ import { getAllReport, handleCheckReport } from "../../../fetchData/Report";
 import { getAllPost } from "../../../fetchData/Post";
 import AdminPagination from "./AdminPagination";
 import { Label } from "@/components/ui/label";
+import toast from "react-hot-toast";
 
 const ManageReport = () => {
   const [reports, setReports] = useState([]);
@@ -111,6 +112,7 @@ const ManageReport = () => {
         );
         fetchData();
         setShowDialog(false);
+        toast.success("Check report successfully!");
       } catch (error) {
         console.error("Error checking report", error);
       }
